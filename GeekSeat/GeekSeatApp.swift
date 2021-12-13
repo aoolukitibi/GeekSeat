@@ -11,7 +11,7 @@ import SwiftUI
 struct GeekSeatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GeekSeatsListView()
         }
     }
 }

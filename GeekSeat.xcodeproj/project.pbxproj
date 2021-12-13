@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F957E16D27613E9700551614 /* GeekSeatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E16C27613E9700551614 /* GeekSeatApp.swift */; };
-		F957E16F27613E9700551614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E16E27613E9700551614 /* ContentView.swift */; };
+		F957E16F27613E9700551614 /* GeekSeatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E16E27613E9700551614 /* GeekSeatsListView.swift */; };
 		F957E17127613E9900551614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F957E17027613E9900551614 /* Assets.xcassets */; };
 		F957E17427613E9900551614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F957E17327613E9900551614 /* Preview Assets.xcassets */; };
 		F957E17E27613E9900551614 /* GeekSeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E17D27613E9900551614 /* GeekSeatTests.swift */; };
 		F957E18827613E9900551614 /* GeekSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E18727613E9900551614 /* GeekSeatUITests.swift */; };
 		F957E18A27613E9900551614 /* GeekSeatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F957E18927613E9900551614 /* GeekSeatUITestsLaunchTests.swift */; };
+		F98FC1A62762A1C5000D9FE7 /* GeekSeatsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FC1A52762A1C5000D9FE7 /* GeekSeatsListViewModel.swift */; };
+		F98FC1A827654216000D9FE7 /* GeekSeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FC1A727654216000D9FE7 /* GeekSeats.swift */; };
+		F98FC1AA27654226000D9FE7 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FC1A927654226000D9FE7 /* WebService.swift */; };
+		F9B20D7E2761CD1B00C87DF6 /* GeekSeatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D7D2761CD1B00C87DF6 /* GeekSeatDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		F957E16927613E9700551614 /* GeekSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F957E16C27613E9700551614 /* GeekSeatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatApp.swift; sourceTree = "<group>"; };
-		F957E16E27613E9700551614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F957E16E27613E9700551614 /* GeekSeatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatsListView.swift; sourceTree = "<group>"; };
 		F957E17027613E9900551614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F957E17327613E9900551614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F957E17927613E9900551614 /* GeekSeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekSeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		F957E18327613E9900551614 /* GeekSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F957E18727613E9900551614 /* GeekSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatUITests.swift; sourceTree = "<group>"; };
 		F957E18927613E9900551614 /* GeekSeatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F98FC1A52762A1C5000D9FE7 /* GeekSeatsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatsListViewModel.swift; sourceTree = "<group>"; };
+		F98FC1A727654216000D9FE7 /* GeekSeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeats.swift; sourceTree = "<group>"; };
+		F98FC1A927654226000D9FE7 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F9B20D7D2761CD1B00C87DF6 /* GeekSeatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSeatDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				F957E16C27613E9700551614 /* GeekSeatApp.swift */,
-				F957E16E27613E9700551614 /* ContentView.swift */,
+				F98FC1AB27654899000D9FE7 /* Views */,
+				F98FC1AC276548AB000D9FE7 /* Model */,
+				F98FC1A927654226000D9FE7 /* WebService.swift */,
 				F957E17027613E9900551614 /* Assets.xcassets */,
 				F957E17227613E9900551614 /* Preview Content */,
 			);
@@ -125,6 +135,24 @@
 				F957E18927613E9900551614 /* GeekSeatUITestsLaunchTests.swift */,
 			);
 			path = GeekSeatUITests;
+			sourceTree = "<group>";
+		};
+		F98FC1AB27654899000D9FE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F957E16E27613E9700551614 /* GeekSeatsListView.swift */,
+				F9B20D7D2761CD1B00C87DF6 /* GeekSeatDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F98FC1AC276548AB000D9FE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F98FC1A52762A1C5000D9FE7 /* GeekSeatsListViewModel.swift */,
+				F98FC1A727654216000D9FE7 /* GeekSeats.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F957E16F27613E9700551614 /* ContentView.swift in Sources */,
+				F98FC1AA27654226000D9FE7 /* WebService.swift in Sources */,
+				F9B20D7E2761CD1B00C87DF6 /* GeekSeatDetailView.swift in Sources */,
+				F957E16F27613E9700551614 /* GeekSeatsListView.swift in Sources */,
+				F98FC1A827654216000D9FE7 /* GeekSeats.swift in Sources */,
 				F957E16D27613E9700551614 /* GeekSeatApp.swift in Sources */,
+				F98FC1A62762A1C5000D9FE7 /* GeekSeatsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +458,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
